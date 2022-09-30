@@ -56,13 +56,12 @@ export default function Inicio({ navigation }) {
       </View>
       <View style={styles.down}>
         <Text style={styles.titulo}>Gerencie os clientes do nosso sistema</Text>
-        <Text style={styles.text}>Gerencie todos os clientes da nossa plataforma, e realize ações para sei la o que</Text>
+        <Text style={styles.text}>Gerencie todos os clientes da nossa plataforma e mantenha nosso sistema atualizado</Text>
         <TouchableOpacity
           onPress={() => navigation.navigate('Autenticacao')}
           style={styles.btn}>
           <Text style={styles.textoBtn}>Entrar</Text>
         </TouchableOpacity>
-        <Text style={styles.npc}>Não possui cadastro?</Text>
       </View>
     </View>
   );

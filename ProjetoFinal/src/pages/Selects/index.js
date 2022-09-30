@@ -93,7 +93,7 @@ export default function Selects({ navigation }) {
             <View style={styles.all}>
                 <View style={styles.header}>
                     <Text style={styles.title}>Clientes Ativos</Text>
-                    <View style={styles.btnAdd}><Text style={styles.more} onPress={() => { navigation.navigate('Select') }}>+</Text></View>
+                    <View style={styles.btnAdd}><Text style={styles.more} onPress={() => { navigation.navigate('CadastroCliente') }}>+</Text></View>
                 </View>
 
                 <Text style={styles.subt}

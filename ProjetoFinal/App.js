@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Inicio from './src/pages/Inicio';
 import Home from './src/pages/Home';
-import Select from './src/pages/Select';
+import CadastroCliente from './src/pages/CadastroCliente';
 import Selects from './src/pages/Selects';
 import SelectInat from './src/pages/SelectInat';
 import Autenticacao from './src/pages/Autenticacao';
@@ -21,9 +21,9 @@ export default function App(){
     <NavigationContainer>
       <Stack.Navigator>
         
-        <Stack.Screen name="Início" component={Inicio} options ={{headerShown: false}}/>
+        <Stack.Screen name="Inicio" component={Inicio} options ={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Home} options ={{headerShown: false}}/>
-        <Stack.Screen name="Select" component={Select} options={{headerTitle : "", headerTintColor: "#4C0677", headerStyle: {background: "none"}}}/>
+        <Stack.Screen name="CadastroCliente" component={CadastroCliente} options={{headerTitle : "", headerTintColor: "#4C0677", headerStyle: {background: "none"}}}/>
         <Stack.Screen name="Selects" component={Selects} options={{headerTitle : "", headerTintColor: "#4C0677", headerStyle: {background: "none"}}}/>
         <Stack.Screen name="SelectInat" component={SelectInat} options={{headerTitle : "", headerTintColor: "#4C0677", headerStyle: {background: "none"}}}/>
         <Stack.Screen name="Autenticacao" component={Autenticacao} options={{headerTitle : "Login"}}/>

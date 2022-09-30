@@ -1,9 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity} from "react-native";
 
+
 export default function Home({navigation}){
   return(
 <View style={styles.all}>
+  <View style={styles.sair}>
+  <Image style={styles.imgSair} source={require('../../images/sair.png')}/>
+  <Text style={styles.txtSair}
+  onPress={()=>{navigation.navigate('Inicio')}}>Sair</Text>
+  </View>
     <View style={styles.allText}>
     <Text style={styles.titulo}>Olá usuário!</Text>
     <Text style={styles.subtitulo}>Estamos cheios de clientes, que tal dar uma olhadinha?</Text>
@@ -99,5 +105,24 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     marginTop:70
+  },
+
+  sair:{
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop:20
+  },
+
+  imgSair:{
+    width: 30,
+    height: 30,
+    marginLeft:30
+  },
+
+  txtSair:{
+    fontSize: 22,
+    color: 'white',
+    fontWeight: 'bold',
+    marginLeft: 10
   }
 });

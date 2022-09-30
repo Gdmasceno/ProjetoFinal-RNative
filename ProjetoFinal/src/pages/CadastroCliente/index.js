@@ -38,7 +38,7 @@ const db = openDatabase({
     name: 'pj_cliente',
 });
 
-export default function Select({ navigation }) {
+export default function CadastroCliente({ navigation }) {
     const [nome, setNome] = useState("");
     const [sobrenome, setSobrenome] = useState("");
     const [telefone, setTelefone] = useState("");
@@ -78,7 +78,9 @@ export default function Select({ navigation }) {
                 [nome, sobrenome,telefone,email,segundaFeira,tercaFeira,quartaFeira,quintaFeira,sextaFeira,horario,preferencia,tipoEst,entrega],
                 (sql, res) => {
                     console.log("Dado inserido com sucesso")
-                    alert("Cliente inserido com sucesso");
+                    Alert.alert(
+                        "Cliente inserido",
+                        "Novo cliente inserido com sucesso")
                     navigation.navigate('Selects')
                 },
                 error => {

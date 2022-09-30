@@ -119,10 +119,10 @@ export default function Detalhe({ navigation,route }) {
 
                 <View style={styles.up}>
                     <Text style={styles.tone}>Telefone:</Text>
-                    <Text style={styles.ttwo}>{item.telefone}</Text>
+                    <Text style={styles.tttwo}>{item.telefone}</Text>
 
                     <Text style={styles.tone}>E-mail:</Text>
-                    <Text style={styles.ttwo}>{item.email}</Text>
+                    <Text style={styles.tttwo}>{item.email}</Text>
                 </View>
 
                 <View style={styles.mid}>
@@ -209,7 +209,8 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: "bold",
         color: "#434343",
-        width: 120
+        width: 120,
+        marginTop:30
     },
 
     tonee:{
@@ -217,6 +218,12 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "#434343",
         width: 200
+    },
+
+    tttwo:{
+        fontSize: 22,
+        fontWeight: "bold",
+        width: 300
     },
 
     ttwo:{
